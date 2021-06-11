@@ -9,19 +9,20 @@ print('-=' * 15)
 r1 = float(input('Primeiro segmento: '))
 r2 = float(input('Segundo segmento: '))
 r3 = float(input('Terceiro segmento: '))
-
 print('-=' * 15)
 print('Analisando os dados...')
 from time import sleep
 sleep(3)
 if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
     print('Os segmentos acima PODEM FORMAR triângulo!')
-    if r1 == r2 == r3 == r1:
+    if r1 == r2 == r3:
         print('Esse triangulo é Equilátero ')
     elif r1 != r2 != r3 != r1:
         print('Esse triangulo é Escaleno')
-    elif r1 == r2 != r3 == r1 or r1 != r2 == r3 != r1:
+    else:
         print('Esse triangulo é Isósceles')
-
 else:
     print('Os segmentos acima NÃO PODEM FORMAR triângulo!')
+
+
+

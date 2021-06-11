@@ -13,3 +13,10 @@ elif n1 < n2:
     print('O segundo número que é {} é maior que o primeiro número que é {}.'.format(n2,n1))
 elif n1 == n2:
     print('Os dois números são iguais')
+
+
+# MODO CURSO EM VIDEO
+# Apenas colocou a terceira condição da seguinte forma:
+
+# else:
+#     print('Os dois números são iguais')
